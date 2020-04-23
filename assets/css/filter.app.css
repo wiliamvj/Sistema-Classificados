@@ -1,0 +1,31 @@
+.titulo_filtro {font-size: 18px; 
+    font-weight: 700; 
+    text-align: left;
+}
+#filterApp {
+    font-size: 16px; 
+    font-weight: 600; 
+    float: left; 
+    width: 100%;
+    margin-bottom: 10px; 
+    width: 100%; 
+    float: left; 
+    padding: 7px;  
+    border-radius: 4px;
+    text-align: left;
+    color: grey;
+}
+#box-filter {
+    margin-bottom: 20px; 
+    width: 100%; 
+    float: left; 
+    padding: 10px; 
+    background-color: white; 
+    border: 1px solid #DDD; 
+    border-radius: 4px;
+    font-size: 15px;
+}
+#title-filter {
+    padding: 5px;
+    font-size: 16px;
+}

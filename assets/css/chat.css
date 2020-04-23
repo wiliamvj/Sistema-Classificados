@@ -1,0 +1,47 @@
+.chat-box{position:relative;padding:5px 10px;margin:5px;color:#4a516f;max-width:100%;}
+.chat-box.pull-left{border-radius:5px 5px 5px 0px;background:rgba(44, 123, 193, 0.2);}
+.chat-box.pull-right{border-radius:5px 5px 0px 5px;background:rgba(44, 193, 123, 0.2);}
+.chat-msg{width:100%;float:left;}
+.chat-img{border-radius:50%;float:left;width:40px;height:40px;}
+.chat-info{display:inline;margin-bottom:2px;font-size:13px;font-weight:bold;color:#FFF;float:right;}
+.chat-author{padding-right:10px;}
+.chat-box.pull-right .chat-box.pull-right{float:right;}
+.chat-msg{margin-bottom:10px;}
+.chat-messages,.chat-contacts{-webkit-transition:-webkit-transform .5s ease-in-out;-moz-transition:-moz-transform .5s ease-in-out;-o-transition:-o-transform .5s ease-in-out;transition:transform .5s ease-in-out;}
+.chat-messages{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);padding:10px 10px 10px 15px;height:367px;overflow:auto;background:#FFFFFF url('../img/noise-monochrome.png');}
+.chat-timestamp, .chat .last-message{font-size:11px;font-weight:normal;font-style:oblique;color:#999;}
+.chat-box.pull-right:after{left:100%;border-color:rgba(44, 193, 123, 0.2) transparent;border-width:0px 6px 10px 0px;}
+.chat-box.pull-right .chat-info{color:rgba(10,100, 40, 0.9);}
+.chat-box.pull-left:before{right:100%;border-color:rgba(44, 123, 193, 0.2) transparent;border-width:0px 0px 10px 6px;}
+.chat-box.pull-left .chat-info{color:rgba(27, 72, 113, 0.9);}
+.chat-box.pull-right:after,.chat-box.pull-left:before{position:absolute;content:' ';pointer-events:none;border-style:solid;bottom:0px;}
+.chat-warning .right>.chat-box{background:#DDD;border-color:#DDD;color:#FFF;}
+.right .chat-box{margin-right:50px;margin-left:0;}
+.chat-warning .right>.chat-box:after,.chat-warning .right>.chat-box:before{border-left-color:#DDD;}
+.right .chat-box:after,.right .chat-box:before{right:auto;left:100%;border-right-color:rgba(0,0,0,0);border-left-color:#D2D6DE;}
+.right .chat-img{float:right;}
+.box-footer{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:3px;border-bottom-left-radius:3px;border-top:1px solid #F4F4F4;padding:20px 15px 0px 15px;background-color:#F5F5F5;}
+.box-footer button{background-color:#399be5;border-radius:3px !important;float:right}
+.box-footer button:hover{opacity: 0.7;}
+.chat-name{font-weight:600;}
+.box-footer form{margin-bottom:10px;}
+.box-footer input{padding-right:20px;border-radius:3px !important;width:99%;}
+.box-body{background-color:rgb(255, 255, 255);border-radius:0px 3px 3px 0px;border:1px solid rgb(237, 234, 234);margin-bottom:20px;width:66%;height:480px;float:left;}
+.box-body.left-list{width:33%;float:left;border-radius:3px 0px 0px 3px !important;border-right:0px solid rgb(237, 234, 234);overflow:auto;}
+.chat{padding:10px;border-bottom:solid 1px #DDDDDD50;}
+.chat img{float:left;height:60px;width:60px;margin:10px;}
+.chat > ul{min-height:80px;cursor:pointer;padding:12px;}
+.chat > ul > li{list-style:none;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.chat.active{background:#F6F6F9;}
+.chat:hover{background:#F9F9F9;}
+.chat .unread{background:#F0F9F9;}
+.chat > ul.unread{background-color:#00A0BA;}
+.chat-button > a{margin-left:10px;background-color:#399be5;color:white !important;text-shadow:0 0;font-weight:600;}
+.chat-text{display:block;word-wrap:break-word;}
+.chat-header{padding:10px 10px 10px 15px;background-color:#F5F5F5;border-bottom:1px solid #DDD;color:#666;}
+.chat .ad-title{color:#6672a6;text-shadow:1px 1px 0px #e5e5e5;font-size:14px;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;font-weight:600;}
+.chat .ad-owner{color:#333;}
+.btn-secondary.chat{background-color:#399be5;width:100%;font-size:21px;padding-top:3px;padding-bottom:3px;padding-right:10px;}
+.btn-secondary.chat > i{margin-right:12px;font-size:21px;}
+.chat-interessado{border-top:1px solid #e3e0c4 !important;border-bottom:0 !important;margin:15px 0 0 0 !important;line-height:60px;padding-bottom:0px !important;}
+.btn.btn-warning{background-color:#FFAE00 !important;}

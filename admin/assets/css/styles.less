@@ -1,0 +1,280 @@
+@fontColor: #262a42;
+
+.flexbox(@vertical: center; @horizontal: center){
+   display: -ms-flex;
+   display: -webkit-flex;
+   display: flex;
+   -ms-align-items: @vertical;
+   -webkit-align-items: @vertical;
+   align-items: @vertical;
+   -ms-justify-content: @horizontal;
+   -webkit-justify-content: @horizontal;
+   justify-content: @horizontal;
+}
+
+html, body {
+	color: @fontColor;
+}
+
+h1 {
+	display: block;
+	padding: 10px;
+	border-left: 3px solid @fontColor;
+	border-bottom: 2px solid #f9f9fa;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0 0 20px;
+}
+
+h2 { font-size: 20px; font-weight: bold; }
+h3 { font-size: 18px; font-weight: bold; }
+
+img { display: inline-block; max-width: 100%; }
+
+table {
+	&.table {
+		tr {
+			td {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+textarea { resize: vertical; }
+
+*[align="center"]{ text-align: center !important; }
+
+header {
+	@height: 60px;
+	background-color: #f9f9fa;
+	border-bottom: 1px solid #e8e9e9;
+
+	.h-logo {
+		height: @height;
+		.flexbox(center; initial);
+	}	
+
+	.h-links {
+		height: @height;
+		.flexbox(center; initial);
+	}
+
+	.h-actions {
+		height: @height;
+		.flexbox(center; flex-end);
+	}
+}
+
+.app-container {
+	overflow: hidden;
+
+	.ac-sidebar {
+		width: 11%;
+		float: left;
+		background-color: #f9f9fa;
+		border-right: 1px solid #e8e9e9;
+
+		nav {
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				li {
+					margin: 0;
+					border-bottom: 1px solid #e8e9e9;
+
+					a {
+						display: block;
+						font-size: 16px;
+						padding: 15px;
+						color: @fontColor;
+						font-weight: bold;
+
+						i { margin-right: 5px; }
+
+						&:hover { background-color: #eeeeee; text-decoration: none; }
+						&.active { background-color: #eeeeee; }
+					}
+				}
+			}
+		}
+	}
+
+	.ac-content {
+		width: 89%;
+		float: left;
+		padding: 15px 30px;
+	}
+}
+
+.app-login {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	& > div {
+		.flexbox();
+		width: 100%;
+		height: 100%;
+		background-color: #CCC;
+	}
+
+	.ap-box {
+		background-color: white;
+		padding: 30px;
+		width: 500px;
+	}
+
+	.al-logo {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+.faq-box {
+	margin-bottom: 20px;
+
+	.fb-listing, .fb-model {
+		margin-top: 10px;
+
+		.item {
+			margin: 10px 0;
+			background-color: #F9F9FA;
+			padding: 10px;
+			border: 1px solid #e8e9e9;
+
+			.h { text-align: right; margin-bottom: 10px; }
+
+			.c {
+				input { margin-bottom: 10px; }
+			}
+		}
+	}
+
+	.fb-model { display: none; }
+}
+
+.modal-loader {
+	text-align: center;
+	padding: 40px 0;
+	font-size: 30px;
+}
+
+.images-box {
+	overflow: hidden;
+
+	.ib-item {
+		display: block;
+		width: 150px;
+		padding: 7px;
+		float: left;
+
+		button { position: absolute; z-index: 2; margin: 5px 0 0 5px; }
+
+		a { display: block; }
+	}
+}
+
+.fields-box {
+	.item { display: none; &.active { display: block; } }
+}
+
+.dataTables_wrapper {
+	.dataTables_length {
+		float: right;
+		width: 50%;
+		text-align: right;
+
+		label { width: 100%; }
+		select { display: inline; width: 15%; margin: 0 5px; }
+	}
+
+	.dataTables_filter {
+		float: left;
+    	margin-bottom: 15px;
+    	width: 50%;
+
+    	label { width: 100%; }
+		input { margin-left: 10px;display: inline;width: 70%; }
+	}
+
+	.dataTables_info {
+		float: right;
+	}
+
+	.dataTables_paginate {
+		float: left;
+
+		a { cursor: pointer; }
+
+		& > * {
+			margin: 0 5px;
+			display: inline-block;
+		}
+
+		& > span {
+			& > * {
+				margin: 0 5px;
+				display: inline-block;
+
+				&.current { font-weight: bold; }
+			}
+		}
+	}
+
+	table {
+		thead {
+			tr {
+				th {
+					&.sorting_asc {
+						&:after {
+							content: "\f175";
+							margin-left: 3px;
+							font: normal normal normal 14px/1 FontAwesome;
+							position: absolute;
+							margin-top: 3px;
+							opacity: 0.3;
+						}
+					}
+					&.sorting_desc {
+						&:after {
+							content: "\f176";
+							margin-left: 3px;
+							font: normal normal normal 14px/1 FontAwesome;
+							position: absolute;
+							margin-top: 3px;
+							opacity: 0.3;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #181250;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+object { display: none; }
