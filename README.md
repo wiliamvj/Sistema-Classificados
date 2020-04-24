@@ -1,8 +1,8 @@
-<p style="text-align: center;">
+<center>
 
 ## Sistema de classificados estilo OLX Brasil
 
-</p>
+</center>
 
 <p align="center">
   <img src="https://github.com/wiliamvj/Sistema-Classificados/blob/master/screen.png" alt="Portfolio in Contruction" />
