@@ -1,8 +1,4 @@
-<center>
-
-## Sistema de classificados estilo OLX Brasil
-
-</center>
+# Sistema de classificados estilo OLX Brasil
 
 <p align="center">
   <img src="https://github.com/wiliamvj/Sistema-Classificados/blob/master/screen.png" alt="Portfolio in Contruction" />
@@ -14,13 +10,13 @@ Sistema baseado na OLX Brasil.
 
 ## Instruções:
 
-* Para configurar o admin do sistema, deve ser criado um banco de dados, importando o arquivos dentro do ZIP **db_mysql.zip**.
+* Para configurar o *admin* do sistema deve ser criado um banco de dados `MYSQL`, extraia o arquivo do ZIP **db_mysql.zip** e faça o upload das tabelas no seu banco de dados.
 
-* Adicione as informações do seu usuário e bano de dados dentro do `config.php`.
+* Adicione as informações do seu usuário e banco de dados dentro do `config.php`. *(Lembre de dar permisão total do banco de dados ao seu usuário)*.
 
-* Altere todas as partes com **your-site** para o seu dominio.
+* Altere todas os arquivos com **your-site** para o seu dominio.
 
-* Será necessário alterar algumas rotas para imagens e outros diretórios funcionar corretamente.
+* Será necessário alterar algumas rotas para imagens e outros diretórios funcionem corretamente.
 
 <br>
 
