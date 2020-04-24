@@ -20,5 +20,13 @@ Sistema baseado na OLX Brasil.
 
 * Altere todas as partes com **your-site** para o seu dominio.
 
+💬 Chat feito com Vuejs.
 
+⚠️ **Não é indicado o uso do chat em produção, pois não possui verificação de spam nem validações de segurança.**
+
+* Para envio de e-mails, configure no administrador com seus dados de SMTP.
+
+Será necessário alterar algumas rotas para imagens e outros diretórios funcionare corretamente.
+
+MIT ©
 
