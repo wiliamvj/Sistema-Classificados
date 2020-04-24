@@ -24,14 +24,13 @@ Sistema baseado na OLX Brasil.
 
 <br>
 
-💬 Chat feito com Vuejs.
+💬 Chat
 
 ⚠️ **Não é indicado o uso do chat em produção, pois não possui verificação de spam nem validações de segurança.**
 
 * Para envio de e-mails, configure no administrador com seus dados de SMTP.
 
 <br>
----
 
 ###  🐛🐞 Bugs conhecidos:
 
