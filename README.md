@@ -18,14 +18,11 @@ Sistema baseado na OLX Brasil.
 
 * Será necessário alterar algumas rotas para imagens e outros diretórios funcionem corretamente.
 
-<br>
 💬 Chat
 
 ⚠️ **Não é indicado o uso do chat em produção, pois não possui verificação de spam nem validações de segurança.**
 
 * Para envio de e-mails, configure no administrador com seus dados de SMTP.
-
-<br>
 
 ###  🐛🐞 Bugs conhecidos:
 
