@@ -156,7 +156,8 @@
                         </ul>
                     </div>
                     <div class="dev">
-                        <a target="_blank" href="https://wiliam.io">by Wiliam</a>
+                        <a target="_blank" href="https://wiliam.io">por Wiliam Joaquim</a><br />
+                        <a target="_blank" href="https://github.com/wiliamvj/Sistema-Classificados"><i class="fa fa-github" style="font-size: 16px;"></i> Sistema Open Source</a>
                     </div>
                 </div>
                 
