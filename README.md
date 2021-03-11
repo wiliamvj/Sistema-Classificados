@@ -1,3 +1,5 @@
+# Descontinuado 🐛
+
 # Sistema de classificados estilo OLX Brasil
 
 <p align="center">
